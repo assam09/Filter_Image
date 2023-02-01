@@ -1,0 +1,90 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+body {
+  background: linear-gradient(90deg, #efd5ff 0%, #515ada 100%);
+}
+.contaner {
+background: linear-gradient(90deg, #00d2ff 0%, #3a47d5 100%);
+  width: 80vw;
+  margin: auto;
+  padding: 20px;
+  border-radius: 10px;
+  display: grid;
+  grid-template-columns: 5fr 3fr;
+  margin-top: 50px;
+}
+.img {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  justify-content: center;
+  align-items: center;
+}
+.img img,
+canvas {
+  max-width: 45vw;
+  max-height: 60vh;
+}
+.upload input {
+  display: none;
+}
+.upload label {
+  color: #fff;
+  font-weight: bold;
+  border: 2px #fff dashed;
+  padding: 10px;
+  cursor: pointer;
+}
+.filter ul {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+.filter ul,
+.filter ul li {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  direction: rtl;
+}
+.filter ul li label {
+  color: #fff;
+}
+.filter ul li input {
+  accent-color: #0b87fe;
+}
+.filter ul li:last-child {
+  flex-direction: row;
+  justify-content: space-around;
+}
+.filter ul li a,
+span {
+  color: #fff;
+  background-color: #060;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 700px) {
+  .contaner {
+    grid-template-columns: 1fr;
+    gap: 50px;
+  }
+  .img img,
+  canvas {
+    max-width: 80vw;
+  }
+}
+.AboSalama {
+  text-align: center;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  font-size: 30px;
+  font-weight: bold;
+  color: black;
+}
